@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationPackage Name="RevitDesignAutomation" Description="Revit Sheet to DWG" Author="Selectra">
+  <CompanyDetails Name="SELECTRA" Url="https://sheetExporter.herokuapp.com" Email="recepagah12@gmail.com"/>
+  <Components Description="Export Revit sheets to Autocad DWG file automatically">
+    <RuntimeRequirements SeriesMax="R2019" SeriesMin="R2020" Platform="Revit" OS="Win64"/>
+    <ComponentEntry LoadOnRevitStartup="True" LoadOnCommandInvocation="False" AppDescription="Export Sheets as DWG" ModuleName="./Contents/sheetExporter.addin" Version="1.0.0" AppName="Sheet Exporter"/>
+  </Components>
+</ApplicationPackage>

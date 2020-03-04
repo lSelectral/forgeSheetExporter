@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="DBApplication">
+    <Name>Export Sheets as DWG</Name>
+    <FullClassName>sheetExporterRevit.Command</FullClassName>
+    <Text>sheet exporter with DA4R</Text>
+    <Description>Revit for Design Automation</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <Assembly>.\sheetExporterRevit.dll</Assembly>
+    <AddInId>000BD853-36E5-461f-9171-C5AYEDA4E723</AddInId>
+    <VendorId>SLC</VendorId>
+    <VendorDescription>SELECTRA</VendorDescription>
+  </AddIn>
+</RevitAddIns>
