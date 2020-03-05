@@ -193,7 +193,7 @@ namespace forgeSample.Controllers
                     Parameters = new Dictionary<string, Parameter>()
                     {
                         { "inputFile", new Parameter() { Description = "input file", LocalName = "$(inputFile)", Ondemand = false, Required = true, Verb = Verb.Get, Zip = false } },
-                        { "outputFile", new Parameter() { Description = "output file", LocalName = "outputFile." + engineAttributes.extension, Ondemand = false, Required = true, Verb = Verb.Put, Zip = false } }
+                        { "outputFile", new Parameter() { Description = "output file", LocalName = "outputFile." + engineAttributes.extension, Ondemand = false, Required = true, Verb = Verb.Put, Zip = true } }
                     },
                         Settings = new Dictionary<string, ISetting>()
                     {
@@ -275,9 +275,9 @@ namespace forgeSample.Controllers
             {
                 Url = string.Format("https://developer.api.autodesk.com/oss/v2/buckets/{0}/objects/{1}", bucketKey, inputFileNameOSS),
                 Headers = new Dictionary<string, string>()
-        {
-            { "Authorization", "Bearer " + oauth.access_token }
-        }
+                {
+                    { "Authorization", "Bearer " + oauth.access_token }
+                }
             };
             // 2. input json
             //dynamic inputJson = new JObject();
